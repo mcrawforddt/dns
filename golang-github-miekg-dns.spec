@@ -18,7 +18,7 @@ and resolvers with it.}
 %global golicenses      COPYRIGHT LICENSE
 %global godocs          AUTHORS CONTRIBUTORS README.md
 
-Name:           miekg-dns
+Name:           dns
 Release:        1%{?dist}
 Summary:        DNS library in Go
 
