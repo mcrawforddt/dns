@@ -24,15 +24,16 @@ Summary:        DNS library in Go
 
 License:        BSD-3-Clause
 URL:            %{gourl}
-Source:         %{gosource}
+Source:         https://%{provider_prefix}/archive/%{commit}/%{name}-%{version}.tar.gz
 
 %description %{common_description}
 
 %gopkg
 
 %prep
-%goprep -A
-%autopatch -p1
+# Need the goprep equivalent of this
+#%setup -q -n %{name}-%{version}
+%goprep -e
 
 %generate_buildrequires
 %go_generate_buildrequires
